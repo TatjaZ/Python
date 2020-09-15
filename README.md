@@ -1,0 +1,2 @@
+# Python
+Для изучения python
