@@ -12,6 +12,10 @@ sleep 2
 cp /home/cashier/.wine/drive_c/PSTrade/DB/TRADELOCAL.DB /home/cashier/.wine/drive_c/PSTrade/DB/TRADELOCAL_210920.DB 
 
 # All26 для 1.5
+# Сохраняем старую версию файлов
+mv /home/cashier/.wine/drive_c/windows/system32/PsBackOffice.dll /home/cashier/.wine/drive_c/windows/system32/PsBackOffice_210920.dll
+mv /home/cashier/.wine/drive_c/PSTrade/SKKO.dll /home/cashier/.wine/drive_c/PSTrade/SKKO_210920.dll
+# Копируем новую версию
 cp PsBackOffice.dll /home/cashier/.wine/drive_c/windows/system32/
 cp SKKO.dll /home/cashier/.wine/drive_c/PSTrade/
 # Скрипты для All26 v.1.5
@@ -35,6 +39,9 @@ sleep 2
 cd ..
 
 # All28 для 1.5
+# Сохраняем старую версию файлов
+mv /home/cashier/.wine/drive_c/windows/system32/Discount.dll /home/cashier/.wine/drive_c/windows/system32/Discount_210920.dll
+# Копируем новую версию
 cp Discount.dll /home/cashier/.wine/drive_c/windows/system32/
 
 cd All28_sql/
