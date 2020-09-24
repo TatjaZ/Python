@@ -1,0 +1,22 @@
+# Пример который показывает, что функция, это класс
+def hello_world():
+    print('Hello world!')
+print (type(hello_world))
+
+#Мы можем хранить функции в переменных:
+hello = hello_world
+print(hello())
+
+#Определять функции внутри других функций:
+def wrapper_function():
+    def hello_world1():
+        print('Hello world11!')
+print(wrapper_function())
+
+#Передавать функции в качестве аргументов и возвращать их из других функций:
+def higher_order(func):
+    print('Получена функция {} в качестве аргумента'.format(func))
+    func()
+    return func
+print(higher_order(hello_world333))
+
